@@ -1,0 +1,439 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+.title-bar {
+	font-family: 'Playfair Display SC', serif;
+	font-size: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer,
+.flyout,
+.testimonial figcaption {
+	font-family: 'Playfair Display SC', serif;
+}
+html,
+p{
+	font-family: 'Open Sans', sans-serif;
+}
+.navbar-nav li a {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.125em;
+}
+.testimonial blockquote,
+.testimonial blockquote:before,
+.testimonial blockquote:after {
+	font-family: 'Petit Formal Script', cursive;
+	font-size: 1.25em;
+}
+/* 	========================================================================
+	Icon Fonts
+	======================================================================== */
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-6ctp8c');
+	src:url('../fonts/icomoon.eot?#iefix-6ctp8c') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-6ctp8c') format('woff'),
+		url('../fonts/icomoon.ttf?-6ctp8c') format('truetype'),
+		url('../fonts/icomoon.svg?-6ctp8c#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-pinterest:after,
+.icon-instagram:after,
+.icon-mail:after,
+.icon-facebook:after {
+	font-size: 1.75em;
+/*	font-size: 1.5em;
+	color: #ddd;
+	background-color: #586660;
+	padding: 8px;
+	border-radius: 50%;
+	transition: 0.3s background-color;*/
+}
+a:hover .icon-pinterest:after,
+a:hover .icon-instagram:after,
+a:hover .icon-mail:after,
+a:hover .icon-facebook:after {
+	/*background-color: #728C86;*/
+}  
+.icon-pinterest:after {
+	content: "\e604";
+	right: 60px;
+}
+.icon-instagram:after {
+	content: "\e603";
+	right: 120px;
+}
+.icon-facebook:after {
+	content: "\e601";
+	right: 60px;
+}
+.icon-mail:after {
+	content: "\e600";
+	right: 120px;
+}
+/* ==========================================================================
+   Styles
+   ========================================================================== */
+html,
+body {
+    background: #fff url('img/cream_pixels.png');
+}
+p {
+	color: #333;
+}
+a {
+	color: #61A5CC;
+}
+a:hover {
+	text-decoration: none;
+	color: #345D82;
+}
+.navbar {
+	border: none;
+}
+.title-bar {
+	display: block;
+	background: #2e2e30;
+	height: 80px;
+	border-radius: 0;
+	text-align: center;
+	margin: 0;
+	box-shadow: 0px 0px 4px 2px #777;
+	position: relative;
+	z-index: 1000;
+}
+.brand-name {
+	position: relative;
+	padding-top: 10px;
+}
+.brand-name a {
+	color: #fff;
+	font-size: 1.75em;
+}
+.small-title {
+	display: none;
+}
+.navbar-toggle {
+	z-index: 2000;
+}
+.navbar-collapse {
+	padding: 0;
+	text-align: center;
+    background: #fff url('img/cream_pixels.png');
+}
+.navbar-nav,
+.drop-nav {
+	padding: 0;
+	float: none;
+}
+.navbar-nav li a {
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.navbar-nav li a {
+	border-bottom: 1px solid #ccc;
+}
+ul.navbar-nav,
+.navbar-nav li {
+	display: inline-block;
+	padding: 0
+}
+.dropdown {
+	position: relative;
+	border: thin solid transparent; /*keeps nav items from shifting on hover*/
+}
+.drop-nav {
+	max-height: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: 4000;
+    background: #fff url('img/cream_pixels.png');
+    top: 45px;
+    left: -1px;
+    width: 250px;
+    text-align: left;
+    -webkit-transition: max-height 0s ease-in;
+    -moz-transition: max-height 0s ease-in;
+	-o-transition: max-height 0s ease-in;
+	-ms-transition: max-height 0s ease-in;
+	transition: max-height 0s ease-in;
+}
+.drop-nav li {
+	position: relative;
+	padding: 10px;
+}
+.drop-nav li a {
+	position: relative;
+	color: #777;
+	padding-top: 10px;
+	padding-left: 27px;
+}
+.dropdown:hover {
+	border-bottom: none;
+}
+.dropdown:hover > .drop-nav {
+	max-height: 500px;
+    border: 1px solid #ccc;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+	-o-transition-duration: 0.6s;
+	-ms-transition-duration: 0.6s;
+	transition-duration: 0.6s;
+} 
+.drop-nav a:hover {
+	color: #000;
+}
+.navbar-toggle {
+	margin-top: 25px;
+}
+.main-content {
+	padding-bottom: 60px;
+}
+.sidebar {
+    padding: 0;
+    text-align: center;
+}
+.sidebar img {
+	padding-top: 10px;
+	padding-left: 20px;
+	width: 85%;
+	height: auto;
+}
+.sidebar hr,
+.page-title hr {
+	border-top: 1px solid #ccc;
+	width: 75%
+}
+.sidebar hr {
+	margin-left: 15%;
+}
+.social-icons {
+	padding-left: 40px;
+	text-align: center;
+}
+.social-icons a {
+	padding: 5px;
+	color: #2e2e30;
+	transition: color 0.3s;
+}
+.social-icons a:hover {
+	color: #44738F;
+}
+.carousel-inner {
+	max-height: 450px;
+}
+.carousel-inner .item img {
+	width: 100%;
+	height: auto;
+}
+.hero-shot img {
+	width: 100%;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+.page-title {
+	text-align: center;
+}
+.testimonial {
+	text-align: center;
+	display: block;
+	padding-top: 80px;
+}
+.testimonial blockquote:before{
+	content: '\201c';
+}
+.testimonial blockquote:after {
+	content: '\201d';
+}
+.testimonial figcaption {
+	text-align: right;
+	padding-right: 10%;
+}
+.testimonial figcaption:before {
+	content: '-';
+}
+.footer {
+	background: #2e2e30;
+	-webkit-box-shadow: 0px 0px 4px 1px #777;
+	-moz-box-shadow: 0px 0px 4px 1px #777;
+	box-shadow: 0px 0px 4px 2px #777;
+	padding: 10px 20px 10px;
+}
+.footer-nav li {
+	display: inline-block;
+	padding: 20px 40px;
+	vertical-align: top;
+}
+.footer-nav a {
+	color: #fff;
+}
+.footer-sub-nav a:hover {
+	text-decoration: underline;
+}
+ul.footer-sub-nav {
+	padding-left: 0;
+	padding-top: 10px;
+}
+.footer-sub-nav li {
+	display: block;
+	padding: 5px 0 0 0;
+}
+.footer-sub-nav a {
+	color: #777;
+}
+.footer p {
+	padding-top: 20px;
+	text-align: center;
+	color: #777;
+}
+.footer p a {
+	color: #777;
+}
+/* Off Canvas Flyout
+ ==================================== */
+ .sidebar-offcanvas {
+ 	padding-right: 5%
+ }
+.flyout {
+	border-radius: 5px;
+	border: 1.5px solid #333;
+	background: #fff;
+	font-size: 1.25em;
+	margin-right: 5%;
+}
+.menu-label {
+	text-align: center;
+	padding: 10px;
+	background: #333;
+}
+.menu-label button {
+	background: #333;
+	color: #fff;
+	border: none;
+}
+.flyout ul {
+	padding: 0;
+	margin-bottom: 4px;
+}
+.flyout li {
+	list-style: none;
+}
+.flyout a {
+	display: block;
+	background: #fff;
+	color: #333;
+	padding: 10px 0 10px 40px;
+	border-top: thin solid #333;
+}
+.flyout ul ul a {
+	padding-left: 60px;
+}
+.flyout ul ul a:before {
+	content: "-";
+}
+.sidebar-offcanvas {
+		display: none;
+}
+
+/* Media Queries
+================================ */
+ 
+@media screen and (max-width: 767px) {
+	
+	/* Off Canvas Media Queries
+		==================================== */
+	.row-offcanvas.active > .sidebar-offcanvas {
+		display: block;
+	}
+	.row-offcanvas {
+		position: relative;
+		-webkit-transition: all .25s ease-out;
+	   	-moz-transition: all .25s ease-out;
+        transition: all .25s ease-out;
+	}
+	.row-offcanvas-right {
+		right: 0;
+	}
+	.row-offcanvas-left {
+		left: 0;
+	}
+	.row-offcanvas-right
+	.sidebar-offcanvas {
+		right: -80%; /* 6 columns */
+	}
+	.row-offcanvas-left
+	.sidebar-offcanvas {
+		left: -80%; /* 6 columns */
+	}
+	.row-offcanvas-right.active {
+		right: 80%; /* 6 columns */
+	}
+	.row-offcanvas-left.active {
+		left: 80%; /* 6 columns */
+	}
+	.sidebar-offcanvas {
+		position: absolute;
+		top: 0;
+		width: 80%; /* 6 columns */
+	}
+	/* End Offcanvas Flyout */
+	.brand-name {
+		padding-top: 20px;
+	}
+	.brand-name a {
+		font-size: 1.25em;
+		margin-right: -44px;
+	}
+}
+@media (max-width: 568px) {
+	.large-title {
+		display: none;
+	}
+	.small-title {
+		display: inline-block;
+	}
+	.brand-name {
+		padding-top: 10px;
+	}
+	.brand-name a {
+		font-size: 1em;
+	}
+	.footer-nav {
+		padding-left: 5px;
+	}
+}
+@media (max-width: 458px) {
+	.flyout {
+		margin-right: 20px;
+	}
+	.flyout a {
+		padding-left: 20px;
+		font-size: 0.9em;
+	}
+	.flyout ul ul a {
+		padding-left: 30px;
+	}
+}
