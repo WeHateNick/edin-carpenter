@@ -20,14 +20,15 @@ html,
 p{
 	font-family: 'Open Sans', sans-serif;
 }
-.navbar-nav li a {
+.navbar-nav li a,
+.sidebar-nav li a {
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	font-size: 1.125em;
 }
 .testimonial blockquote,
-.testimonial blockquote:before,
-.testimonial blockquote:after {
+.testimonial blockquote::before,
+.testimonial blockquote::after {
 	font-family: 'Petit Formal Script', cursive;
 	font-size: 1.25em;
 }
@@ -59,37 +60,25 @@ p{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.icon-pinterest:after,
-.icon-instagram:after,
-.icon-mail:after,
-.icon-facebook:after {
+.icon-pinterest::after,
+.icon-instagram::after,
+.icon-mail::after,
+.icon-facebook::after {
 	font-size: 1.75em;
-/*	font-size: 1.5em;
-	color: #ddd;
-	background-color: #586660;
-	padding: 8px;
-	border-radius: 50%;
-	transition: 0.3s background-color;*/
 }
-a:hover .icon-pinterest:after,
-a:hover .icon-instagram:after,
-a:hover .icon-mail:after,
-a:hover .icon-facebook:after {
-	/*background-color: #728C86;*/
-}  
-.icon-pinterest:after {
+.icon-pinterest::after {
 	content: "\e604";
 	right: 60px;
 }
-.icon-instagram:after {
+.icon-instagram::after {
 	content: "\e603";
 	right: 120px;
 }
-.icon-facebook:after {
+.icon-facebook::after {
 	content: "\e601";
 	right: 60px;
 }
-.icon-mail:after {
+.icon-mail::after {
 	content: "\e600";
 	right: 120px;
 }
@@ -99,6 +88,9 @@ a:hover .icon-facebook:after {
 html,
 body {
     background: #fff url('img/cream_pixels.png');
+}
+hr {
+	border-top: 1px solid #ccc;
 }
 p {
 	color: #333;
@@ -216,6 +208,25 @@ ul.navbar-nav,
     padding: 0;
     text-align: center;
 }
+.sidebar-nav li {
+	list-style: none;
+	border-bottom: 1px solid #ccc;
+}
+.sidebar-nav a {
+	color: #777;
+	display: block;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.sidebar-nav .active a {
+	background: #2e2e30;
+	color: #fff;
+	border-bottom: 0;
+}
+.sidebar-nav a:hover {
+	background: #2e2e30;
+	color: white;
+}
 .sidebar img {
 	padding-top: 10px;
 	padding-left: 20px;
@@ -224,7 +235,6 @@ ul.navbar-nav,
 }
 .sidebar hr,
 .page-title hr {
-	border-top: 1px solid #ccc;
 	width: 75%
 }
 .sidebar hr {
@@ -262,17 +272,17 @@ ul.navbar-nav,
 	display: block;
 	padding-top: 80px;
 }
-.testimonial blockquote:before{
+.testimonial blockquote::before{
 	content: '\201c';
 }
-.testimonial blockquote:after {
+.testimonial blockquote::after {
 	content: '\201d';
 }
 .testimonial figcaption {
 	text-align: right;
 	padding-right: 10%;
 }
-.testimonial figcaption:before {
+.testimonial figcaption::before {
 	content: '-';
 }
 .footer {
@@ -351,12 +361,36 @@ ul.footer-sub-nav {
 .flyout ul ul a {
 	padding-left: 60px;
 }
-.flyout ul ul a:before {
+.flyout ul ul a::before {
 	content: "-";
 }
 .sidebar-offcanvas {
 		display: none;
 }
+/* Blog
+================================ */
+.preview-img {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+.excerpt img {
+	width: 100%;
+}
+.excerpt p {
+	padding-bottom: 30px;
+}
+a.read-more {
+	background: #2e2e30;
+	padding: 10px;
+	color: white;
+	border-radius: 5px;
+}
+a:hover.read-more {
+	background: #44738F;
+}
+
 
 /* Media Queries
 ================================ */
@@ -405,7 +439,6 @@ ul.footer-sub-nav {
 	}
 	.brand-name a {
 		font-size: 1.25em;
-		margin-right: -20%;
 	}
 	.social-icons {
 		padding-top: 20px;
@@ -429,6 +462,7 @@ ul.footer-sub-nav {
 	}
 	.brand-name a {
 		font-size: 1em;
+		margin-right: -20%;
 	}
 	.footer-nav {
 		padding-left: 5px;
