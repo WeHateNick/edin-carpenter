@@ -458,6 +458,15 @@ a:hover.read-more {
 	background: #777;
 }
 
+/* Blog
+================================ */
+.gallery-preview {
+	text-align: center;
+}
+.gallery-preview img {
+	margin: 20px;
+	border-radius: 5px;
+}
 
 /* Media Queries
 ================================ */
