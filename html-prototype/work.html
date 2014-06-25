@@ -126,13 +126,15 @@
               <p>
                 Normcore banh mi deep v Helvetica. Vinyl umami flannel retro. Synth messenger bag YOLO scenester. Normcore banh mi deep v Helvetica. Vinyl umami flannel retro. Synth messenger bag YOLO scenester.
               </p>
+              <a href="#" id="launch-gallery" class="btn">Open Gallery</a>
             </div>
             <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-            <div id="blueimp-gallery" class="blueimp-gallery">
+            <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
                 <!-- The container for the modal slides -->
                 <div class="slides"></div>
                 <!-- Controls for the borderless lightbox -->
                 <h3 class="title"></h3>
+                <p class="description"></p>
                 <a class="prev">‹</a>
                 <a class="next">›</a>
                 <a class="close">×</a>
@@ -163,23 +165,23 @@
             </div>
             <!-- Image Links -->
             <div class="gallery-preview" id="links">
-              <a href="http://placekitten.com/300/150" title="Banana" data-gallery>
-                  <img src="http://placekitten.com/300/150" alt="Banana">
+              <a href="http://placekitten.com/400/400" title="Banana" data-description="This is a test description" data-gallery>
+                  <img src="http://placekitten.com/400/400" alt="Banana">
               </a>
-              <a href="http://lorempixel.com/300/150/" title="Apple" data-gallery>
-                  <img src="http://lorempixel.com/300/150/" alt="Apple">
+              <a href="http://lorempixel.com/400/400" title="Apple"  data-description="Here's another description"data-gallery>
+                  <img src="http://lorempixel.com/400/400" alt="Apple">
               </a>
-              <a href="http://lorempixel.com/300/150/" title="Orange" data-gallery>
-                  <img src="http://lorempixel.com/300/150/" alt="Orange">
+              <a href="http://lorempixel.com/400/400" title="Orange" data-description="This is a test description" data-gallery>
+                  <img src="http://lorempixel.com/400/400" alt="Orange">
               </a>
-              <a href="http://placekitten.com/300/150" title="Banana" data-gallery>
-                  <img src="http://placekitten.com/300/150" alt="Banana">
+              <a href="http://placekitten.com/400/400" title="Banana" data-description="This is a test description" data-gallery>
+                  <img src="http://placekitten.com/400/400" alt="Banana">
               </a>
-              <a href="http://lorempixel.com/300/150/" title="Orange" data-gallery>
-                  <img src="http://lorempixel.com/300/150/" alt="Orange">
+              <a href="http://lorempixel.com/400/400" title="Orange" data-description="This is a test description" data-gallery>
+                  <img src="http://lorempixel.com/400/400" alt="Orange">
               </a>
-              <a href="http://placekitten.com/300/150" title="Banana" data-gallery>
-                  <img src="http://placekitten.com/300/150" alt="Banana">
+              <a href="http://placekitten.com/400/400" title="Banana" data-description="This is a test description" data-gallery>
+                  <img src="http://placekitten.com/400/400" alt="Banana">
               </a>
             </div>
           </div>        <!-- End main content -->
@@ -260,7 +262,7 @@
     <script src="js/custom.js"></script>
     <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
     <script src="js/bootstrap-image-gallery.min.js"></script>
-
+    <script src="js/custom-image-gallery.js"></script>
 
 
     <div id="window-resizer-tooltip" style="display: none;">

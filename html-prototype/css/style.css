@@ -112,6 +112,8 @@ a:hover {
 	border-radius: 0;
 	text-align: center;
 	margin: 0;
+	-webkit-box-shadow: 0px 0px 4px 2px #777;
+	-moz-box-shadow: 0px 0px 4px 2px #777;
 	box-shadow: 0px 0px 4px 2px #777;
 	position: relative;
 	z-index: 1000;
@@ -448,17 +450,18 @@ ul.footer-sub-nav {
 .excerpt p {
 	padding-bottom: 30px;
 }
-a.read-more {
-	background: #2e2e30;
+a.btn {
+	background: #6E7177;
 	padding: 10px;
-	color: white;
+	color: #fff;
 	border-radius: 5px;
 }
-a:hover.read-more {
-	background: #777;
+a:hover.btn {
+	background: #2e2e30;
+	color: #fff;
 }
 
-/* Blog
+/* Work
 ================================ */
 .gallery-preview {
 	text-align: center;
@@ -466,6 +469,27 @@ a:hover.read-more {
 .gallery-preview img {
 	margin: 20px;
 	border-radius: 5px;
+	width: 200px;
+	height: 200px;
+	-webkit-box-shadow: 0px 0px 4px 2px #777;
+	-moz-box-shadow: 0px 0px 4px 2px #777;
+	box-shadow: 0px 0px 4px 2px #777;
+}
+.blueimp-gallery > .title:hover,
+.blueimp-gallery > .description {
+	opacity: 0.8;
+}
+.blueimp-gallery > .description {
+  position: absolute;
+  bottom: 10%;
+  text-align: center;
+  color: #ccc;
+  display: none;
+  left: 0;
+  right: 0;
+}
+.blueimp-gallery-controls > .description {
+  display: block;
 }
 
 /* Media Queries
