@@ -189,11 +189,11 @@ ul.navbar-nav,
 .dropdown:hover > .drop-nav {
 	max-height: 500px;
     border: 1px solid #ccc;
-    -webkit-transition-duration: 0.6s;
-    -moz-transition-duration: 0.6s;
-	-o-transition-duration: 0.6s;
-	-ms-transition-duration: 0.6s;
-	transition-duration: 0.6s;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	transition-duration: 0.8s;
 } 
 .drop-nav a:hover {
 	color: #000;
@@ -222,6 +222,7 @@ ul.navbar-nav,
 	background: #2e2e30;
 	color: #fff;
 	border-bottom: 0;
+	border-radius: 5px 5px 0 0;
 }
 .sidebar img {
 	padding-top: 10px;
@@ -286,10 +287,8 @@ li.active-page a::after {
 	padding: 5px;
 	color: #2e2e30;
 }
-.social-icons a:hover {
-	/*border-bottom: thick solid #000;*/
-}
-/* Underline Effect */
+/* Underline Effect 
+=================== */
 .social-icons a {
 	/*padding: 8px 0;*/
 }
@@ -387,6 +386,9 @@ ul.footer-sub-nav {
 .footer p a {
 	color: #777;
 }
+.footer p a:hover {
+	color: #fff;
+}
 /* Off Canvas Flyout
  ==================================== */
  .sidebar-offcanvas {
@@ -453,7 +455,7 @@ a.read-more {
 	border-radius: 5px;
 }
 a:hover.read-more {
-	background: #44738F;
+	background: #777;
 }
 
 
@@ -512,6 +514,9 @@ a:hover.read-more {
 	}
 	.social-icons a {
 		padding-right: 20px;
+	}
+	.social-icons a::after {
+	display: none;
 	}
 }
 @media (max-width: 568px) {
