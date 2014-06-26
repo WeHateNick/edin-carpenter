@@ -601,11 +601,11 @@ a:hover.btn {
 	.social-icons a::after {
 		display: none;
 	}
-	.gallery-preview-img:hover::after {
+	.gallery-preview-img:hover::after,
+	.btn-gallery:hover  {
 		display: none;
 	}
-	.gallery-preview-img:hover > .btn-gallery,
-	.btn-gallery:hover {
+	.gallery-preview-img:hover > .btn-gallery {
 		width: 100%;
 		height: 100%;
 		top: 0;

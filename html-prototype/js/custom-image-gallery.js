@@ -13,19 +13,3 @@ $('#launch-gallery').on('click',function (event) {
     options = {index: link, event: event};
     blueimp.Gallery(links, options);
 });
-
-
-// $(window).resize(function() {
-//     if ($(window).width() < 767) {
-//         $('.btn-gallery').removeAttr('data-gallery');
-//         $('.link-gallery').addAttr('data-gallery');
-//     }
-//     else {
-//         $('.link-gallery').removeAttr('data-gallery');
-//         $('.btn-gallery').addAttr('data-gallery');
-//     }
-// });
-
-$('.btn-gallery').on('click',function () {
-    event.preventDefault();
-}
