@@ -109,6 +109,8 @@ a:hover {
 	display: block;
 	background: #2e2e30;
 	min-height: 80px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	border-radius: 0;
 	text-align: center;
 	margin: 0;
@@ -224,6 +226,8 @@ ul.navbar-nav,
 	background: #2e2e30;
 	color: #fff;
 	border-bottom: 0;
+	-webkit-border-radius: 5px 0 0;
+	-moz-border-radius: 5px 0 0;
 	border-radius: 5px 5px 0 0;
 }
 .sidebar img {
@@ -331,6 +335,8 @@ li.active-page a::after {
 .hero-shot img {
 	width: 100%;
 	border: 1px solid #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
 .page-title {
@@ -397,6 +403,8 @@ ul.footer-sub-nav {
  	padding-right: 5%
  }
 .flyout {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	border-radius: 5px;
 	border: 1.5px solid #333;
 	background: #fff;
@@ -454,6 +462,8 @@ a.btn {
 	background: #6E7177;
 	padding: 10px;
 	color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
 a:hover.btn {
@@ -463,23 +473,26 @@ a:hover.btn {
 
 /* Work
 ================================ */
-.preview-img {
+
+.gallery-preview-img {
 	position: relative;
 	width: 200px;
 	height: 200px;
 	text-align: center;
 	margin: 20px 0;
 	padding: 0;
-	border-radius: 5px;
 }
-.preview-img img {
+.gallery-preview-img img {
 	width: 100%;
 	height: auto;
 	-webkit-box-shadow: 0px 0px 4px 2px #777;
 	-moz-box-shadow: 0px 0px 4px 2px #777;
 	box-shadow: 0px 0px 4px 2px #777;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
-.preview-img:hover::after {
+.gallery-preview-img:hover::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -501,14 +514,17 @@ a:hover.btn {
 	margin-right: 25px;
 	z-index: 4000;
 	padding: 10px 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	border-radius: 5px;
 	border: thin solid #fff;
 	color: #fff;
 }
 a.btn-gallery:hover {
 	color: #fff;
+	border: 2px solid #fff;
 }
-.preview-img:hover > .btn-gallery {
+.gallery-preview-img:hover > .btn-gallery {
 	display: block;
 }
 .blueimp-gallery > .title:hover,
@@ -587,6 +603,9 @@ a.btn-gallery:hover {
 	.social-icons a::after {
 	display: none;
 	}
+	.gallery-preview {
+		padding-left: 60px;
+	}
 }
 @media (max-width: 568px) {
 	.large-title {
@@ -605,6 +624,10 @@ a.btn-gallery:hover {
 	}
 	.footer-nav {
 		padding-left: 5px;
+	}
+	.gallery-preview {
+		width: 100%;
+		padding-left: 10%;
 	}
 }
 @media (max-width: 458px) {
