@@ -601,7 +601,7 @@ a.btn-gallery:hover {
 		padding-right: 20px;
 	}
 	.social-icons a::after {
-	display: none;
+		display: none;
 	}
 	.gallery-preview {
 		padding-left: 60px;
