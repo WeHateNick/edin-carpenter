@@ -601,10 +601,18 @@ a:hover.btn {
 	.social-icons a::after {
 		display: none;
 	}
-	.gallery-preview-img:hover::after,
+	.gallery-preview-img:hover::after {
+		display: none;
+	}
 	.gallery-preview-img:hover > .btn-gallery,
 	.btn-gallery:hover {
-		display: none;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		color: transparent;
+		border: transparent;
 	}
 }
 @media (max-width: 568px) {
