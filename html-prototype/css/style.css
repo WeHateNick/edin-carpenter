@@ -479,7 +479,7 @@ a:hover.btn {
 	width: 200px;
 	height: 200px;
 	text-align: center;
-	margin: 20px 0;
+	margin: 20px auto;
 	padding: 0;
 }
 .gallery-preview-img img {
@@ -520,7 +520,7 @@ a:hover.btn {
 	border: thin solid #fff;
 	color: #fff;
 }
-a.btn-gallery:hover {
+.btn-gallery:hover {
 	color: #fff;
 	border: 2px solid #fff;
 }
@@ -566,11 +566,9 @@ a.btn-gallery:hover {
 	.row-offcanvas-left {
 		left: 0;
 	}
-	.row-offcanvas-right
 	.sidebar-offcanvas {
 		right: -80%; /* 6 columns */
 	}
-	.row-offcanvas-left
 	.sidebar-offcanvas {
 		left: -80%; /* 6 columns */
 	}
@@ -603,8 +601,10 @@ a.btn-gallery:hover {
 	.social-icons a::after {
 		display: none;
 	}
-	.gallery-preview {
-		padding-left: 60px;
+	.gallery-preview-img:hover::after,
+	.gallery-preview-img:hover > .btn-gallery,
+	.btn-gallery:hover {
+		display: none;
 	}
 }
 @media (max-width: 568px) {
@@ -624,10 +624,6 @@ a.btn-gallery:hover {
 	}
 	.footer-nav {
 		padding-left: 5px;
-	}
-	.gallery-preview {
-		width: 100%;
-		padding-left: 10%;
 	}
 }
 @media (max-width: 458px) {
