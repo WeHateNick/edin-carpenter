@@ -619,17 +619,8 @@ a:hover.btn {
 	.social-icons a::after {
 		display: none;
 	}
-	.gallery-preview-img::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: #2e2e30;
-		opacity: 0.5;
+	.gallery-preview-img:hover::after {
+		background: transparent;
 	}
 	.btn-gallery {
 		display: block;
@@ -639,6 +630,10 @@ a:hover.btn {
 		bottom: 0;
 		margin: auto;
 		border: 2px solid #fff;
+		color: transparent;
+		border: transparent;
+	}
+	.btn-gallery:hover {
 		color: transparent;
 		border: transparent;
 	}
