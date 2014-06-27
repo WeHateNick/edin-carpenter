@@ -590,6 +590,10 @@ a:hover.btn {
 	.brand-name a {
 		font-size: 1.25em;
 	}
+	.sidebar img {
+		padding-left: 0;
+		padding-right: 10px;
+	}
 	.social-icons {
 		padding-top: 20px;
 		padding-bottom: 40px;
