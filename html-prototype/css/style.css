@@ -566,10 +566,10 @@ a:hover.btn {
 	.row-offcanvas-left {
 		left: 0;
 	}
-	.sidebar-offcanvas {
+	.row-offcanvas-right .sidebar-offcanvas {
 		right: -80%; /* 6 columns */
 	}
-	.sidebar-offcanvas {
+	.row-offcanvas-left .sidebar-offcanvas {
 		left: -80%; /* 6 columns */
 	}
 	.row-offcanvas-right.active {
