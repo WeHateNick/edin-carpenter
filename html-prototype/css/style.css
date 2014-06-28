@@ -561,6 +561,10 @@ a:hover.btn {
 /* Media Queries
 ================================ */
  
+@media screen and (min-width: 767px) {
+
+}
+
 @media screen and (max-width: 767px) {
 	
 	/* Off Canvas Media Queries
@@ -630,12 +634,12 @@ a:hover.btn {
 		bottom: 0;
 		margin: auto;
 		border: 2px solid #fff;
-		color: transparent;
-		border: transparent;
+/*		color: transparent;
+		border: transparent;*/
 	}
 	.btn-gallery:hover {
-		color: transparent;
-		border: transparent;
+/*		color: transparent;
+		border: transparent;*/
 	}
 }
 @media (max-width: 568px) {
