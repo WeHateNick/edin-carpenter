@@ -101,7 +101,7 @@ p{
    ========================================================================== */
 html,
 body {
-    background: #fff url('img/cream_pixels.png');
+    background: #fff url('css/img/cream_pixels.png');
 }
 hr {
 	border-top: 1px solid #ccc;
@@ -151,10 +151,9 @@ a:hover {
 .navbar-collapse {
 	padding: 0;
 	text-align: center;
-    background: #fff url('img/cream_pixels.png');
+    background: #fff url('css/img/cream_pixels.png');
 }
-.navbar-nav,
-.drop-nav {
+.navbar-nav {
 	padding: 0;
 	float: none;
 }
@@ -163,7 +162,7 @@ a:hover {
 	padding-left: 10px;
 	padding-right: 40px;
 }
-.navbar-nav li a {
+.navbar-nav {
 	border-bottom: 1px solid #ccc;
 }
 .navbar-nav li.current-menu-item a {
@@ -174,16 +173,16 @@ ul.navbar-nav,
 	display: inline-block;
 	padding: 0
 }
-.dropdown {
+.navbar-nav .menu-item-has-children {
 	position: relative;
-	border: thin solid transparent; /*keeps nav items from shifting on hover*/
+	/*border: thin solid transparent; keeps nav items from shifting on hover*/
 }
-.drop-nav {
+.navbar-nav .sub-menu {
 	max-height: 0;
 	overflow: hidden;
 	position: absolute;
 	z-index: 4000;
-    background: #fff url('img/cream_pixels.png');
+	background: transparent;
     top: 45px;
     left: -1px;
     width: 250px;
@@ -193,22 +192,24 @@ ul.navbar-nav,
 	-o-transition: max-height 0s ease-in;
 	-ms-transition: max-height 0s ease-in;
 	transition: max-height 0s ease-in;
+	border-top: none;
 }
-.drop-nav li {
+.navbar-nav .sub-menu li {
 	position: relative;
 	padding: 10px;
 }
-.drop-nav li a {
+.navbar-nav .sub-menu li a {
 	position: relative;
 	color: #777;
 	padding-top: 10px;
 	padding-left: 27px;
 }
-.dropdown:hover {
+.navbar-nav .sub-menu a:hover {
 	border-bottom: none;
 }
-.dropdown:hover > .drop-nav {
+.navbar-nav li.menu-item-has-children:hover > .sub-menu {
 	max-height: 500px;
+    background: #fff url('css/img/cream_pixels.png');
     border: 1px solid #ccc;
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
@@ -216,7 +217,7 @@ ul.navbar-nav,
 	-ms-transition-duration: 0.8s;
 	transition-duration: 0.8s;
 } 
-.drop-nav a:hover {
+.navbar-nav .sub-menu a:hover {
 	color: #000;
 }
 .navbar-toggle {

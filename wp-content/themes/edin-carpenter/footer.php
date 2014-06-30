@@ -8,30 +8,6 @@
           );
         wp_nav_menu($args);
        ?>
-      <!-- <ul class="footer-nav brackets-effect">
-        <li>
-          <a href="#">About</a>
-          <ul class="footer-sub-nav">
-            <li><a href="#">Blog</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Work</a>
-          <ul class="footer-sub-nav">
-            <li><a href="#">Weddings</a></li>
-            <li><a href="#">Photo Shoots</a></li>
-            <li><a href="#">Special Events</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-          <ul class="footer-sub-nav">
-            <li><a href="#">Get a Quote</a></li>
-            <li><a href="#">Pricing</a></li>
-          </ul>
-        </li>
-      </ul> -->
     <p>&copy; 2014 Edin Carpenter Makeup Artistry | Designed and Developed by <a href="http://wehatenick.com">Nick Ocampo</a> | <a href="http://getbootstrap.com/examples/carousel/#">Terms &amp; Conditions</a></p>
   </footer class="footer">
 
