@@ -166,6 +166,9 @@ a:hover {
 .navbar-nav li a {
 	border-bottom: 1px solid #ccc;
 }
+.navbar-nav li.current-menu-item a {
+	color: #000;
+}
 ul.navbar-nav,
 .navbar-nav li {
 	display: inline-block;
@@ -286,11 +289,17 @@ ul.navbar-nav,
 .brackets-effect li a:hover::before,
 .brackets-effect li a:hover::after,
 .brackets-effect li a:focus::before,
-.brackets-effect li a:focus::after {
+.brackets-effect li a:focus::after,
+.brackets-effect li.current-menu-item a::before,
+.brackets-effect li.current-menu-item a::after {
 	opacity: 1;
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
+}
+.brackets-effect li.current-menu-item li a::before,
+.brackets-effect li.current-menu-item li a::after {
+	opacity: 0;
 }
 li.active-page a::before,
 li.active-page a::after {
@@ -389,15 +398,15 @@ li.active-page a::after {
 .footer-nav a {
 	color: #fff;
 }
-ul.footer-sub-nav {
+ul.sub-menu {
 	padding-left: 0;
 	padding-top: 10px;
 }
-.footer-sub-nav li {
+.sub-menu li {
 	display: block;
 	padding: 5px 0 0 0;
 }
-.footer-sub-nav a {
+.sub-menu a {
 	color: #777;
 }
 .footer p {
@@ -506,18 +515,6 @@ a:hover.btn {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
-/*.no-touch .gallery-preview-img:hover::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #2e2e30;
-	opacity: 0.5;
-}*/
 .btn-gallery {
 	position: absolute;
 	display: block;
@@ -530,12 +527,6 @@ a:hover.btn {
 	border: thin solid #fff;
 	color: #fff;
 	opacity: 0;
-/*		color: transparent;
-	border: transparent;*/
-}
-.btn-gallery:hover {
-/*		color: transparent;
-	border: transparent;*/
 }
 .blueimp-gallery > .title:hover,
 .blueimp-gallery > .description {

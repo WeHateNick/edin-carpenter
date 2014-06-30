@@ -34,10 +34,10 @@
   <div class="navbar navbar-default" role="navigation">
     <div class="title-bar">
       <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <div class="sr-only">Toggle navigation</div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></span>
       </button>
       <div class="brand-name">
         <a href="<?php bloginfo('url'); ?>" class="large-title">Edin Carpenter &diam; Makeup Artistry</a>
@@ -45,7 +45,16 @@
       </div>
     </div>
     <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
+      <?php
+        $args = array(
+          'theme_locations' => 'header-menu',
+          'menu_class' => 'nav navbar-nav',
+          'container' => 'false'
+          );
+        wp_nav_menu($args);
+       ?>
+
+      <!-- <ul class="nav navbar-nav">
         <li class="dropdown">
           <a href="page.html">About</a>
           <ul class="drop-nav">
@@ -68,6 +77,6 @@
             <li><a href="#">Pricing</a></li>
           </ul>
         </li>
-      </ul>
+      </ul> -->
     </div>
   </div>

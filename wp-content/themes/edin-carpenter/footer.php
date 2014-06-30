@@ -1,6 +1,14 @@
 
   <footer class="footer">
-      <ul class="footer-nav brackets-effect">
+        <?php
+        $args = array(
+          'theme_location' => 'footer-menu',
+          'menu_class' => 'footer-nav brackets-effect',
+          'container' => 'false'
+          );
+        wp_nav_menu($args);
+       ?>
+      <!-- <ul class="footer-nav brackets-effect">
         <li>
           <a href="#">About</a>
           <ul class="footer-sub-nav">
@@ -23,7 +31,7 @@
             <li><a href="#">Pricing</a></li>
           </ul>
         </li>
-      </ul>
+      </ul> -->
     <p>&copy; 2014 Edin Carpenter Makeup Artistry | Designed and Developed by <a href="http://wehatenick.com">Nick Ocampo</a> | <a href="http://getbootstrap.com/examples/carousel/#">Terms &amp; Conditions</a></p>
   </footer class="footer">
 
