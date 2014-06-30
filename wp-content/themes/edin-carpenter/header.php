@@ -40,7 +40,7 @@
         <span class="icon-bar"></span>
       </button>
       <div class="brand-name">
-        <a href="index.html" class="large-title">Edin Carpenter &diam; Makeup Artistry</a>
+        <a href="<?php bloginfo('url'); ?>" class="large-title">Edin Carpenter &diam; Makeup Artistry</a>
         <a href="index.html" class="small-title">Edin Carpenter<br>Makeup Artistry</a>
       </div>
     </div>
