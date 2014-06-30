@@ -8,7 +8,7 @@
           );
         wp_nav_menu($args);
        ?>
-    <p>&copy; 2014 Edin Carpenter Makeup Artistry | Designed and Developed by <a href="http://wehatenick.com">Nick Ocampo</a> | <a href="http://getbootstrap.com/examples/carousel/#">Terms &amp; Conditions</a></p>
+    <p>&copy; <?php echo date('Y')?> <?php bloginfo('name'); ?> | Designed and Developed by <a href="http://wehatenick.com">Nick Ocampo</a> | <a href="http://getbootstrap.com/examples/carousel/#">Terms &amp; Conditions</a></p>
   </footer class="footer">
 
     <div id="window-resizer-tooltip" style="display: none;">

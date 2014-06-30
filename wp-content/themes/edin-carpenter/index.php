@@ -4,7 +4,7 @@
       <!-- Sidebar
       ================================================== -->
       <div class="col-sm-3 sidebar">
-        <img src="img/ecma-logo-sidebar.png">
+        <img src="wp-content/themes/edin-carpenter/img/ecma-logo-sidebar.png">
         <hr>
         <div class="social-icons underline-effect">
           <a href="#"><span class="icon-pinterest"></span></a>

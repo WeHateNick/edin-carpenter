@@ -9,11 +9,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Edin Carpenter Makeup Artistry - Reno, NV">
-  <meta name="author" content="Edin Carpenter">
   <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
 
-  <title>Edin Carpenter Makeup Artistry</title>
+  <title>
+    <?php 
+
+    wp_title('|', true, 'right');
+    bloginfo('name');
+
+    ?>
+  </title>
 
   <!-- JS -->
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -53,30 +58,5 @@
           );
         wp_nav_menu($args);
        ?>
-
-      <!-- <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="page.html">About</a>
-          <ul class="drop-nav">
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="work.html">Work</a>
-          <ul class="drop-nav">
-            <li><a href="#">Weddings</a></li>
-            <li><a href="#">Photoshoots</a></li>
-            <li><a href="#">Special Events</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="page.html">Contact</a>
-          <ul class="drop-nav">
-            <li><a href="#">Save the Date</a></li>
-            <li><a href="#">Pricing</a></li>
-          </ul>
-        </li>
-      </ul> -->
     </div>
   </div>
