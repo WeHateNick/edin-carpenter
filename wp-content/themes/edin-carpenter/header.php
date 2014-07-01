@@ -20,9 +20,6 @@
     ?>
   </title>
 
-  <!-- JS -->
-  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-
 
   <!-- TYPOGRAPHY -->
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400|Open+Sans:400italic,400,300,600|Petit+Formal+Script' rel='stylesheet' type='text/css'>
