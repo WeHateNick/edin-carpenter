@@ -49,7 +49,7 @@
     <div class="navbar-collapse collapse">
       <?php
         $args = array(
-          'theme_locations' => 'header-menu',
+          'theme_location' => 'header-menu',
           'menu_class' => 'nav navbar-nav',
           'container' => 'false'
           );
