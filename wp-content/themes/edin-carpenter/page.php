@@ -4,11 +4,11 @@
       <!-- Sidebar
       ================================================== -->
       <div class="col-sm-3 hidden-xs sidebar">
-          <ul class="sidebar-nav brackets-effect">
+<!--           <ul class="sidebar-nav brackets-effect">
               <li class="section"><a href="#">About</a></li>
               <li class="active-page"><a href=".blog.html">Blog</a></li>
               <li><a href="#">Testimonials</a></li>
-          </ul>
+          </ul> -->
         <img src="wp-content/themes/edin-carpenter/img/ecma-logo-sidebar.png">
         <hr>
         <div class="social-icons underline-effect">
