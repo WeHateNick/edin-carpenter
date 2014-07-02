@@ -54,18 +54,18 @@ add_action('init', 'register_theme_menus');
 
 // Create and load widgets
 //============================
-function create_widget($name, $id, $description) {
-              register_sidebar( array(
-                'name'         => __( $name ),
-                'id'           => $id,
-                'description'  => __( $description ),
-                'before_title' => '<h2>',
-                'after_title'  => '</h2>',
-            ) );
-            }
-            create_widget('Sidenav', 'sidenav-1', 'Sub-page navigation will display to the left of page');
+// function create_widget($name, $id, $description) {
+//               register_sidebar( array(
+//                 'name'         => __( $name ),
+//                 'id'           => $id,
+//                 'description'  => __( $description ),
+//                 'before_title' => '<h2>',
+//                 'after_title'  => '</h2>',
+//             ) );
+//             }
+//             create_widget('Sidenav', 'sidenav-1', 'Sub-page navigation will display to the left of page');
 
-            add_action('widgets_init', 'create_widget');
+//             add_action('widgets_init', 'create_widget');
 
 
 
