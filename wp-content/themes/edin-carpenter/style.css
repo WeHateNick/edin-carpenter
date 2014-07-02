@@ -291,20 +291,14 @@ ul.navbar-nav,
 .brackets-effect li a:hover::before,
 .brackets-effect li a:hover::after,
 .brackets-effect li a:focus::before,
-.brackets-effect li a:focus::after,
-.brackets-effect li.current-menu-item a::before,
-.brackets-effect li.current-menu-item a::after {
+.brackets-effect li a:focus::after {
 	opacity: 1;
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
 }
-.brackets-effect li.current-menu-item li a::before,
-.brackets-effect li.current-menu-item li a::after {
-	opacity: 0;
-}
-li.current_page_item a::before,
-li.current_page_item a::after {
+li.current_page_item > a::before,
+li.current_page_item > a::after {
 	opacity: 1;
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
