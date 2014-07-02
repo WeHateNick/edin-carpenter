@@ -1,33 +1,15 @@
       <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
         <div class="flyout">
-          <ul>
-            <li class="menu-label"><button type="button" data-toggle="offcanvas" data-target=".navbar-collapse">Menu</button></li>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="page.html">About</a>
-              <ul>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="work.html">Work</a>
-              <ul>
-                <li><a href="#">Weddings</a></li>
-                <li><a href="#">Photo Shoots</a></li>
-                <li><a href="#">Special Events</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-              <ul>
-                <li><a href="#">Get a Quote</a></li>
-                <li><a href="#">Pricing</a></li>
-              </ul>
-            </li>
-          </ul>
+            <div class="menu-label">
+              <button type="button" data-toggle="offcanvas" data-target=".navbar-collapse">Menu</button>
+            </div>
+            <?php
+              $args = array(
+                'theme_location' => 'footer-menu',
+                'container' => 'false'
+                );
+              wp_nav_menu($args);
+             ?>
         </div>
       </div><!--/Flyout-->
     </div>

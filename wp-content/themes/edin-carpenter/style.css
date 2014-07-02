@@ -435,6 +435,8 @@ ul.sub-menu {
 	background: #fff;
 	font-size: 1.25em;
 	margin-right: 5%;
+	position: relative;
+	z-index: 4000;
 }
 .menu-label {
 	text-align: center;
