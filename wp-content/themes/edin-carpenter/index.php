@@ -50,6 +50,7 @@
                 </div> <!-- END CAROUSSELL  -->
             </div>
           </div> <!-- End Hero Shot -->
+          <p> This is the index.php page</p>
         </div>  <!-- End container -->
       </div>
       <!-- Flyout Canvas Menu -->

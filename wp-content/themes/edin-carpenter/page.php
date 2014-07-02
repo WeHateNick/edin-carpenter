@@ -33,8 +33,10 @@
           }
 
           if ($sidelinks) { ?>
-            <h2><?php the_title(); ?></h2>
             <ul class="sidebar-nav brackets-effect">
+            <li class="section">
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </li>
               <?php //links in <li> tags
               echo $sidelinks; ?>
             </ul>         
@@ -87,6 +89,7 @@
                 </div> <!-- END CAROUSSELL  -->
             </div>
           </div> <!-- End Hero Shot -->
+          <p> This is the page.php template</p>
         </div>  <!-- End container -->
       </div>
       <!-- Flyout Canvas Menu -->
