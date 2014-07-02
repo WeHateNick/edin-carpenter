@@ -1,5 +1,7 @@
 <?php 
 
+// Load CSS
+//============================
 function theme_styles() {
 
 	wp_enqueue_style('normalize', get_template_directory_uri() . '/css/normalize.css');
@@ -10,6 +12,8 @@ function theme_styles() {
 }
 add_action('wp_enqueue_scripts', 'theme_styles');
 
+// Load Javascript
+//============================
 function theme_js() {
 
 	global $wp_scripts;
@@ -31,6 +35,8 @@ function theme_js() {
 }
 add_action('wp_enqueue_scripts', 'theme_js');
 
+// Create and load menus
+//============================
 add_theme_support('menus');
 
 function register_theme_menus() {
@@ -45,6 +51,27 @@ function register_theme_menus() {
 }
 
 add_action('init', 'register_theme_menus');
+
+// Create and load widgets
+//============================
+function create_widget($name, $id, $description) {
+              register_sidebar( array(
+                'name'         => __( $name ),
+                'id'           => $id,
+                'description'  => __( $description ),
+                'before_title' => '<h2>',
+                'after_title'  => '</h2>',
+            ) );
+            }
+            create_widget('Sidenav', 'sidenav-1', 'Sub-page navigation will display to the left of page');
+
+            add_action('widgets_init', 'create_widget');
+
+
+
+
+
+
 
 
 
