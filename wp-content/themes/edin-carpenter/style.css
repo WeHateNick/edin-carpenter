@@ -241,7 +241,7 @@ ul.navbar-nav,
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
-.sidebar-nav .section a {
+.sidebar-nav li:first-child a {
 	background: #2e2e30;
 	color: #fff;
 	border-bottom: 0;
@@ -303,8 +303,8 @@ ul.navbar-nav,
 .brackets-effect li.current-menu-item li a::after {
 	opacity: 0;
 }
-li.active-page a::before,
-li.active-page a::after {
+li.current_page_item a::before,
+li.current_page_item a::after {
 	opacity: 1;
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
