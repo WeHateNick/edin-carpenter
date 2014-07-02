@@ -3,7 +3,17 @@
     <div class="row row-offcanvas row-offcanvas-right">
       <!-- Sidebar
       ================================================== -->
-      <div class="col-sm-3 sidebar">
+      <div class="col-sm-3 hidden-xs sidebar">
+<!--           <ul class="sidebar-nav brackets-effect">
+              <li class="section"><a href="#">About</a></li>
+              <li class="active-page"><a href=".blog.html">Blog</a></li>
+              <li><a href="#">Testimonials</a></li>
+          </ul> -->
+        <ul class="clearfix sidebar-nav brackets-effect">
+          <?php wp_list_pages( array('title_li'=>'','include'=>get_post_top_ancestor_id()) ); ?>
+          <?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>
+        </ul>
+
         <img src="wp-content/themes/edin-carpenter/img/ecma-logo-sidebar.png">
         <hr>
         <div class="social-icons underline-effect">
@@ -50,53 +60,8 @@
                 </div> <!-- END CAROUSSELL  -->
             </div>
           </div> <!-- End Hero Shot -->
-          <p> This is the index.php page</p>
+          <p> This is the page.php template</p>
         </div>  <!-- End container -->
       </div>
       <!-- Flyout Canvas Menu -->
-      <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-        <div class="flyout">
-          <ul>
-            <li class="menu-label"><button type="button" data-toggle="offcanvas" data-target=".navbar-collapse">Menu</button></li>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="page.html">About</a>
-              <ul>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="work.html">Work</a>
-              <ul>
-                <li><a href="#">Weddings</a></li>
-                <li><a href="#">Photo Shoots</a></li>
-                <li><a href="#">Special Events</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-              <ul>
-                <li><a href="#">Get a Quote</a></li>
-                <li><a href="#">Pricing</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div><!--/Flyout-->
-    </div>
-    <div class="row">
-      <figure class="col-sm-10 col-md-offset-1 testimonial">
-        <blockquote>
-          Edin is amazing. You can't go wrong with her for any type of event!
-        </blockquote>
-        <figcaption>
-          Nick Ocampo
-        </figcaption>
-      </figure>
-    </div>
-  </div> 
-  <!-- FOOTER -->
 <?php get_footer(); ?>
