@@ -232,7 +232,6 @@ ul.navbar-nav,
     text-align: center;
 }
 .sidebar-nav {
-	/*padding-bottom: 40px;*/
 	padding-left: 20px;
 }
 .sidebar-nav li {
@@ -353,7 +352,7 @@ li.current_page_item > a::after {
 	height: auto;
 }
 .hero-shot img {
-	width: 100%;
+	/*width: 100%;*/
 	border: 1px solid #fff;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;

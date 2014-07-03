@@ -24,39 +24,31 @@
           <!-- Hero Shot
           ================================================== -->
           <div class="row">
-            <div class="col-xs-12 hero-shot"> 
-              <div id="carousel-work" class="carousel slide">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#carousel-work" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-work" data-slide-to="1"></li>
-                    <li data-target="#carousel-work" data-slide-to="2"></li>
-                  </ol>
-
-                  <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                              <img src="img/crazy-eyes.png">
-                            </div>
-                            <div class="item">
-                              <img src="img/blonde-just-face.png">
-                            </div>
-                            <div class="item">
-                              <img src="img/crazy-eyes.png">
-                            </div>
-                        </div>
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#carousel-work" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                  </a>
-                  <a class="right carousel-control" href="#carousel-work" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
-                </div> <!-- END CAROUSSELL  -->
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+              <div class="col-xs-12 hero-shot"> 
+                <img src="<?php the_field('main_image'); ?>">
+              </div>
             </div>
-          </div> <!-- End Hero Shot -->
-          <p> This is the page.php template</p>
-        </div>  <!-- End container -->
+            <!-- End Hero Shot -->
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="page-title">
+                  <h2><?php the_title(); ?></h2>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <!-- Main Content
+            ================================================== -->
+            <div class="row">
+              <div class="col-sm-10 col-md-offset-1">
+                <?php the_field('content'); ?>
+                <?php endwhile; else: ?>
+                  <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+              <?php endif; ?>
+            </div>
+          </div>        <!-- End main content -->
+        </div> 
       </div>
       <!-- Flyout Canvas Menu -->
 <?php get_footer(); ?>
