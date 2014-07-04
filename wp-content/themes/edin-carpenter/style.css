@@ -31,8 +31,20 @@ footer,
 	font-family: 'Playfair Display SC', serif;
 }
 html,
-p{
+p, 
+body {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 1em
+}
+p {
+	line-height: 1.75em;
+	margin-bottom: 1.5em;
+}
+ul {
+	margin-bottom: 1.5em;
+}
+.page-title h2 {
+	font-size: 2.5em;
 }
 .navbar-nav li a,
 .sidebar-nav li a {
@@ -147,6 +159,7 @@ a:hover {
 }
 .navbar-toggle {
 	z-index: 2000;
+	margin-top: 35px;
 }
 .navbar-collapse {
 	padding: 0;
@@ -220,9 +233,6 @@ ul.navbar-nav,
 } 
 .navbar-nav .sub-menu a:hover {
 	color: #000;
-}
-.navbar-toggle {
-	margin-top: 25px;
 }
 .main-content {
 	padding-bottom: 60px;
@@ -351,8 +361,12 @@ li.current_page_item > a::after {
 	width: 100%;
 	height: auto;
 }
+.hero-shot {
+	max-height: 450px;
+	overflow: hidden;
+}
 .hero-shot img {
-	/*width: 100%;*/
+	width: 100%;
 	border: 1px solid #fff;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -620,11 +634,19 @@ a:hover.btn {
 		width: 80%; /* 6 columns */
 	}
 	/* End Offcanvas Flyout */
+	.large-title {
+		display: none;
+	}
+	.small-title {
+		display: inline-block;
+	}
 	.brand-name {
 		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.brand-name a {
-		font-size: 1.25em;
+		font-size: 1em;
+		margin-right: -20%;
 	}
 	.sidebar img {
 		padding-left: 0;
@@ -644,20 +666,6 @@ a:hover.btn {
 	}
 }
 @media (max-width: 568px) {
-	.large-title {
-		display: none;
-	}
-	.small-title {
-		display: inline-block;
-	}
-	.brand-name {
-		padding-top: 10px;
-		padding-bottom: 20px;
-	}
-	.brand-name a {
-		font-size: 1em;
-		margin-right: -20%;
-	}
 	.footer-nav {
 		padding-left: 5px;
 	}
@@ -673,21 +681,17 @@ a:hover.btn {
 	.flyout ul ul a {
 		padding-left: 30px;
 	}
-	body {
-		font-size: 1.6em;
-	}
 }
-@media (max-width: 348px) {
+@media (max-width: 368px) {
 	.brand-name a {
 		padding-top: 10px;
 		padding-left: 20px;
-		font-size: 0.75em;
 		text-align: left;
 	}
 	.title-bar {
 		text-align: left;
 	}
 	.social-icons {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 }
