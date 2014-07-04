@@ -43,7 +43,7 @@
       </button>
       <div class="brand-name">
         <a href="<?php bloginfo('url'); ?>" class="large-title">Edin Carpenter &diam; Makeup Artistry</a>
-        <a href="index.html" class="small-title">Edin Carpenter<br>Makeup Artistry</a>
+        <a href="<?php bloginfo('url'); ?>" class="small-title">Edin Carpenter<br>Makeup Artistry</a>
       </div>
     </div>
     <div class="navbar-collapse collapse">
