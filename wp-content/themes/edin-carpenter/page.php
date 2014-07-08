@@ -11,35 +11,35 @@
         endif;
       ?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <div class="col-sm-9">
-        <div class="container-fluid">
-          <!-- Hero Shot
-          ================================================== -->
-          <div class="row">
-            <div class="col-xs-12 hero-shot"> 
-              <img src="<?php the_field('main_image'); ?>">
-            </div>
-          </div>
-          <!-- End Hero Shot -->
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="page-title">
-                <h2><?php the_title(); ?></h2>
-                <hr>
+        <div class="col-sm-9">
+          <div class="container-fluid">
+            <!-- Hero Shot
+            ================================================== -->
+            <div class="row">
+              <div class="col-xs-12 hero-shot"> 
+                <img src="<?php the_field('main_image'); ?>">
               </div>
             </div>
-          </div>
-          <!-- Main Content
-          ================================================== -->
-          <div class="row">
-            <div class="col-sm-10 col-md-offset-1">
-              <?php the_field('content'); ?>
-              <?php endwhile; else: ?>
-                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-              <?php endif; ?>
+            <!-- End Hero Shot -->
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="page-title">
+                  <h2><?php the_title(); ?></h2>
+                  <hr>
+                </div>
+              </div>
             </div>
-          </div>        <!-- End main content -->
-        </div> 
-      </div>
+            <!-- Main Content
+            ================================================== -->
+            <div class="row">
+              <div class="col-sm-10 col-md-offset-1">
+                <?php the_field('content'); ?>
+              </div>
+            </div>        <!-- End main content -->
+          </div> 
+        </div>
+      <?php endwhile; else: ?>
+        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+      <?php endif; ?>
       <!-- Flyout Canvas Menu -->
 <?php get_footer(); ?>

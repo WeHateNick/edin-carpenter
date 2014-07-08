@@ -362,8 +362,12 @@ li.current_page_item > a::after {
 	height: auto;
 }
 .hero-shot {
-	max-height: 450px;
+	max-height: 350px;
 	overflow: hidden;
+	padding: 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 .hero-shot img {
 	width: 100%;
