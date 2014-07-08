@@ -46,8 +46,14 @@
 
                 <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
+                <figure class="testimonial">
+                  <blockquote>
                   <?php the_field('testimonial'); ?>
+                  </blockquote>
+                  <figcaption>
                   <?php the_field('author'); ?>
+                  </figcaption>
+                </figure>
                   <?php endwhile; else: ?>
                     <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
                   <?php endif; ?>
