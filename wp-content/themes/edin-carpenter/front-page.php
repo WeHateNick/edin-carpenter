@@ -1,19 +1,15 @@
 <?php get_header(); ?>
   <div class="container-fluid main-content">
     <div class="row row-offcanvas row-offcanvas-right">
-      <!-- Sidebar
-      ================================================== -->
-      <div class="col-sm-3 sidebar">
-        <img src="wp-content/themes/edin-carpenter/img/ecma-logo-sidebar.png">
-        <hr>
-        <div class="social-icons underline-effect">
-          <a href="#"><span class="icon-pinterest"></span></a>
-          <a href="#"><span class="icon-instagram"></span></a>
-          <a href="#"><span class="icon-facebook"></span></a>
-          <a href="#"><span class="icon-mail"></span></a>
-        </div>
-      </div>
-      <!-- End sidebar -->
+      <?php
+        if ( is_front_page() ) :
+          get_sidebar( 'front-page' );
+        elseif ( is_404() ) :
+          get_sidebar( 'front-page' );
+        else :
+          get_sidebar();
+        endif;
+      ?>
       <div class="col-sm-9">
         <div class="container-fluid">
           <!-- Hero Shot

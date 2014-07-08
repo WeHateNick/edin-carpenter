@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+
+/*
+
+  Template Name: Testimonials Page
+
+*/
+get_header(); ?>
   <div class="container-fluid main-content">
     <div class="row row-offcanvas row-offcanvas-right">
       <?php
@@ -29,11 +36,23 @@
               </div>
             </div>
           </div>
+      <?php endwhile; else: ?>
+        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+      <?php endif; ?>
+      <?php 
+        $args = array(
+            'post_type' => 'testimonials'
+          );
+
+        $the_query = new WP_Query($args);
+      ?>
+      <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
           <!-- Main Content
           ================================================== -->
           <div class="row">
             <div class="col-sm-10 col-md-offset-1">
-              <?php the_field('content'); ?>
+              <?php the_field('testimonial'); ?>
+              <?php the_field('author'); ?>
               <?php endwhile; else: ?>
                 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
               <?php endif; ?>
@@ -43,3 +62,11 @@
       </div>
       <!-- Flyout Canvas Menu -->
 <?php get_footer(); ?>
+
+
+
+
+
+
+
+
