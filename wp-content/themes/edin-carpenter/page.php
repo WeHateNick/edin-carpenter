@@ -10,9 +10,10 @@
           get_sidebar();
         endif;
       ?>
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <div class="col-sm-9">
-          <div class="container-fluid">
+      <div class="col-sm-9">
+        <div class="container-fluid">
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      
             <?php get_template_part('content', 'hero'); ?>
             <!-- Main Content
             ================================================== -->
@@ -21,10 +22,10 @@
                 <?php the_field('content'); ?>
               </div>
             </div>        <!-- End main content -->
-          </div> 
-        </div>
-      <?php endwhile; else: ?>
-        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-      <?php endif; ?>
+          <?php endwhile; else: ?>
+            <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+          <?php endif; ?>
+        </div> 
+      </div>
       <!-- Flyout Canvas Menu -->
 <?php get_footer(); ?>

@@ -434,6 +434,18 @@ ul.sub-menu {
 .footer p a:hover {
 	color: #fff;
 }
+a.btn {
+	background: #6E7177;
+	padding: 10px;
+	color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+a:hover.btn {
+	background: #2e2e30;
+	color: #fff;
+}
 /* Off Canvas Flyout
  ==================================== */
  .sidebar-offcanvas {
@@ -491,23 +503,11 @@ ul.sub-menu {
 	overflow: hidden;
 	margin-bottom: 40px;
 }
+.excerpt {
+	margin-bottom: 40px;
+}
 .excerpt img {
 	width: 100%;
-}
-.excerpt p {
-	padding-bottom: 30px;
-}
-a.btn {
-	background: #6E7177;
-	padding: 10px;
-	color: #fff;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-a:hover.btn {
-	background: #2e2e30;
-	color: #fff;
 }
 
 /* Work
