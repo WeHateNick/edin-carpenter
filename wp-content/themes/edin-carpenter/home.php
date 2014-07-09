@@ -21,7 +21,7 @@
               <div class="col-sm-10 col-md-offset-1">
 
                 <article class="excerpt">
-                  <h2><?php the_title(); ?></h2>
+                  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                   <div class="preview-img">
                     <img src="<?php the_field('main-image'); ?>">
                   </div>

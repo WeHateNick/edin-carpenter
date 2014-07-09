@@ -509,6 +509,9 @@ a:hover.btn {
 .excerpt img {
 	width: 100%;
 }
+.excerpt h2 a {
+	color: #333;
+}
 
 /* Work
 ================================ */
