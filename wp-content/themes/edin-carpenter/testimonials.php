@@ -13,22 +13,7 @@
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="col-sm-9">
           <div class="container-fluid">
-            <!-- Hero Shot
-            ================================================== -->
-            <div class="row">
-              <div class="col-xs-12 hero-shot"> 
-                <img src="<?php the_field('main_image'); ?>">
-              </div>
-            </div>
-            <!-- End Hero Shot -->
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="page-title">
-                  <h2><?php the_title(); ?></h2>
-                  <hr>
-                </div>
-              </div>
-            </div>
+            <?php get_template_part('content', 'hero'); ?>
             <!-- Main Content
             ================================================== -->
             <div class="row">
