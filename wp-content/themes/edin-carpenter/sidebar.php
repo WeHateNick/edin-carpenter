@@ -6,7 +6,7 @@
           <?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>
         </ul>
         <a href="<?php bloginfo('url'); ?>" title="Homepage">
-          <img src="<?php echo get_template_directory_uri() . '/img/ecma-logo-sidebar.png';?>">
+          <img src="<?php bloginfo('template_directory'); ?>/img/ecma-logo-sidebar.png" alt="Edin Carpenter Makeup Artistry Logo">
         </a>
         <hr>
         <div class="social-icons underline-effect">

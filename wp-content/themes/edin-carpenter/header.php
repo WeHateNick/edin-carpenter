@@ -9,6 +9,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Edin Carpenter Makeup Artistry is a premiere makeup artistry in Reno, NV. Edin and here team bring world-class quality makeup artistry to Reno and Tahoe.">
   <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
 
   <title>
