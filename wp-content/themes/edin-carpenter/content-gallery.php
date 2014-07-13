@@ -36,40 +36,21 @@
             <!-- Image Links 
             ========================================-->
             <div class="gallery-preview" id="links">
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="gallery-preview-img">
-                  <a href="http://placekitten.com/400/400" class="btn-gallery" title="Another Title" data-description="A different description" data-gallery>View in Gallery</a>
-                    <img src="http://placekitten.com/400/400" alt="Banana">
+              <?php 
+                $args = array(
+                          'post_type' => 'gallery',
+                          'posts_per_page' => 64
+                        );
+
+                        $the_query = new WP_Query($args);
+                $the_query = new WP_Query($args);
+              ?>
+              <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="gallery-preview-img" style="background-image: url(<?php the_field('image'); ?>)">
+                    <a href="<?php the_field('image'); ?>" class="btn-gallery" title="<?php the_title(); ?>" data-description="<?php the_field('description'); ?>" data-gallery>View in Gallery</a>
+                      <img src="<?php the_field('image'); ?>" alt="the_field('description');">
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="gallery-preview-img">
-                  <a href="http://lorempixel.com/400/400" class="btn-gallery" title="Title" data-description="This is the description" data-gallery>View in Gallery</a>
-                    <img src="http://lorempixel.com/400/400" alt="Apple">
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="gallery-preview-img">
-                  <a href="http://lorempixel.com/400/400" class="btn-gallery" title="Title" data-description="This is the description" data-gallery>View in Gallery</a>
-                    <img src="http://lorempixel.com/400/400" alt="Orange">
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12 preview-img-container">
-                <div class="gallery-preview-img">
-                  <a href="http://placekitten.com/400/400" class="btn-gallery" title="Another Title" data-description="A different description" data-gallery>View in Gallery</a>
-                    <img src="http://placekitten.com/400/400" alt="Banana">
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12 preview-img-container">
-                <div class="gallery-preview-img">
-                  <a href="http://lorempixel.com/400/400" class="btn-gallery" title="Title" data-description="This is the description" data-gallery>View in Gallery</a>
-                    <img src="http://lorempixel.com/400/400" alt="Orange">
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12 preview-img-container">
-                <div class="gallery-preview-img">
-                  <a href="http://placekitten.com/400/400" class="btn-gallery" title="Another Title" data-description="A different description" data-gallery>View in Gallery</a>
-                    <img src="http://placekitten.com/400/400" alt="Banana">
-                </div>
-              </div>
+              <?php endwhile; endif; ?>
             </div>
