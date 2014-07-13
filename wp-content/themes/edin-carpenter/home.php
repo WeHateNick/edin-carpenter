@@ -11,8 +11,6 @@
         endif;
       ?>
       <div class="col-sm-9">
-        <div class="container-fluid">
-          <?php // get_template_part('content', 'hero'); ?>
 
             <!-- Main Content
             ================================================== -->
