@@ -11,7 +11,7 @@
                       <?php comments_template(); ?>
                     <?php else: ?>
                       <p><?php the_field('excerpt'); ?></p>
-                      <a href="<?php the_permalink(); ?>" class="btn">Read More &rarr;</a>
+                      <a href="<?php the_permalink(); ?>" class="btn">Read Full Post &rarr;</a>
                       <hr>
                     <?php endif; ?>
                 </article>
