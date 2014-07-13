@@ -23,5 +23,4 @@
           <?php endif; ?>
         </div> 
       </div>
-      <!-- Flyout Canvas Menu -->
 <?php get_footer(); ?>

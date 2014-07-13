@@ -22,7 +22,8 @@
                 <?php 
 
                   $args = array(
-                    'post_type' => 'testimonials'
+                    'post_type' => 'testimonials',
+                    'posts_per_page' => 15
                   );
 
                   $the_query = new WP_Query($args);

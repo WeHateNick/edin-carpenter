@@ -46,16 +46,9 @@
                 </div> <!-- END CAROUSSELL  -->
             </div>
           </div> <!-- End Hero Shot -->
-          <div class="row">
-            <figure class="col-sm-10 col-md-offset-1 testimonial">
-              <blockquote>
-                Edin is amazing. You can't go wrong with her for any type of event!
-              </blockquote>
-              <figcaption>
-                Nick Ocampo
-              </figcaption>
-            </figure>
-          </div>
+          <?php
+            get_template_part('content', 'testimonial')
+          ?>
         </div>  <!-- End container -->
       </div>
       <!-- Flyout Canvas Menu -->
