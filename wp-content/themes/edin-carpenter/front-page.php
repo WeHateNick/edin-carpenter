@@ -26,15 +26,25 @@
 
                   <!-- Wrapper for slides -->
                         <div class="carousel-inner">
-                            <div class="item active">
+                           <!--  <div class="item active">
                               <img src="img/crazy-eyes.png">
-                            </div>
+                            </div> -->
+                          <?php 
+
+                            $args = array(
+                              'post_type' => 'slide',
+                              'posts_per_page' => 6
+                            );
+
+                            $the_query = new WP_Query($args);
+
+                          ?>
+
+                          <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                             <div class="item">
-                              <img src="img/blonde-just-face.png">
+                              <img src="<?php the_field('image'); ?>">
                             </div>
-                            <div class="item">
-                              <img src="img/crazy-eyes.png">
-                            </div>
+                          <?php endwhile; endif; ?>
                         </div>
                   <!-- Controls -->
                   <a class="left carousel-control" href="#carousel-work" data-slide="prev">
