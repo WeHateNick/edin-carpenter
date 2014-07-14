@@ -36,7 +36,8 @@
             <!-- Image Links 
             ========================================-->
             <div class="gallery-preview" id="links">
-              <?php 
+              <?php
+                 
                 $args = array(
                           'post_type' => 'gallery',
                           'posts_per_page' => 64

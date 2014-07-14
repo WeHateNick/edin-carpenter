@@ -1,15 +1,7 @@
 <?php get_header(); ?>
   <div class="container-fluid main-content">
     <div class="row row-offcanvas row-offcanvas-right">
-      <?php
-        if ( is_front_page() ) :
-          get_sidebar( 'front-page' );
-        elseif ( is_404() ) :
-          get_sidebar( 'front-page' );
-        else :
-          get_sidebar();
-        endif;
-      ?>
+      <?php get_template_part('content', 'sidebar'); ?>
       <div class="col-sm-9">
         <div class="container-fluid">
           <?php
