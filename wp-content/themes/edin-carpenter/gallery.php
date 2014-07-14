@@ -6,7 +6,6 @@
 get_header(); ?>
   <div class="container-fluid main-content">
     <div class="row row-offcanvas row-offcanvas-right">
-      <?php //get_template_part('content', 'categories'); ?>
       <?php get_template_part('content', 'sidebar'); ?>
       <div class="col-sm-9">
         <div class="container-fluid">

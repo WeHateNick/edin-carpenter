@@ -49,7 +49,6 @@ function register_theme_menus() {
 		);
 
 }
-
 add_action('init', 'register_theme_menus');
 
 if(!function_exists('get_post_top_ancestor_id')){
@@ -70,12 +69,6 @@ function get_post_top_ancestor_id(){
     
     return $post->ID;
 }}
-
-add_action('init', 'gallery_add_category_box');
-
-function gallery_add_category_box() {
-    register_taxonomy_for_object_type('category', 'gallery');
-}
 
 
 
