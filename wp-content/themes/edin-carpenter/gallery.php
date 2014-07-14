@@ -6,7 +6,7 @@
 get_header(); ?>
   <div class="container-fluid main-content">
     <div class="row row-offcanvas row-offcanvas-right">
-      <?php get_template_part('content', 'sidebar'); ?>
+      <?php get_template_part('content', 'categories'); ?>
       <div class="col-sm-9">
         <div class="container-fluid">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
