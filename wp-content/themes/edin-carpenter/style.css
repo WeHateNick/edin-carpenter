@@ -435,6 +435,7 @@ ul.sub-menu {
 .footer p a:hover {
 	color: #fff;
 }
+button.btn.btn-primary,
 a.btn {
 	background: #2e2e30;
 	color: #fff;
@@ -443,6 +444,10 @@ a.btn {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+button.btn.btn-primary {
+	width: 100px;
+}
+button.btn.btn-primary:hover,
 a:hover.btn {
 	background: #6E7177;
 	color: #fff;
