@@ -585,6 +585,9 @@ ol.commentlist {
 .bk_calendar_frame.months_num_in_row_.cal_month_num_2 {
 width: 100% !important;
 }
+.control-group:last-child {
+	display: none;
+}
 /* Media Queries
 ================================ */
  
