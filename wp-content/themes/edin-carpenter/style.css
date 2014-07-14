@@ -582,7 +582,9 @@ ol.commentlist {
 .blueimp-gallery-controls > .description {
   display: block;
 }
-
+.bk_calendar_frame.months_num_in_row_.cal_month_num_2 {
+width: 100% !important;
+}
 /* Media Queries
 ================================ */
  
