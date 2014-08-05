@@ -629,6 +629,14 @@ width: 100% !important;
 		color: #fff;
 	}
 }
+/* Hiding elements from WordPress comments.php template */
+
+.comment-author.vcard {
+    display: none;
+}
+ol.comment-list {
+    list-style: none;
+}
 
 @media screen and (max-width: 767px) {
 	
